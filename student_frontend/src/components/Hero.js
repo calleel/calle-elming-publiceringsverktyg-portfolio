@@ -34,55 +34,24 @@ const Hero = () => {
             <h1>Calle Elming</h1>
             <div className="underline"></div>
             <h4>Blivande systemutvecklare</h4>
-            {/* - 🔭 I’m currently working on my own Portfolio site
+            <p>Studerar just nu till Systemutvecklare och är 
             <br />
-            - I’m currently learning React, Gatsby, GraphQL and Strapi
+            alltid på jakt för att lära mig nya saker.</p>
+            <p>
+            Jag har erfarenhet av bland annat:
             <br />
-            - 🤔 I’m looking for help with anything frontend :)
+            - HTML, CSS, Javascript
             <br />
-            - 💬 Ask me about Rhodesian Ridgebacks
+            - Gatsby
             <br />
-            - 😄 Pronouns: Inquisitive, break the mold.. <br />- 💜{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://strapi.io/documentation/v3.x/getting-started/introduction.html"
-            >
-              Strapi
-            </a>
-            ,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://reactjs.org/docs/getting-started.html"
-            >
-              React
-            </a>
-            ,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.gatsbyjs.org/docs/"
-            >
-              Gatsby
-            </a>{" "}
-            ,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://styled-components.com/docs"
-            >
-              Styled Components
-            </a>
+            - Strapi
             <br />
-            - ⚡ Fun fact: I used to fly planes
-            <br />
-            - 📫 How to reach me: use the link below :)
-            <br /> */}
+            - C# .NET, Blazor, MVC
+            </p>
+            
             <Link to="/contact" className="btn">
               kontakta mig
             </Link>
-            <SocialLinks />
           </div>
         </article>
         <Image fluid={fluid} className="hero-img" />
