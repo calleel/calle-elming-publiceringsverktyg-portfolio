@@ -12,6 +12,18 @@ Variables
 */
 
 :root {
+  /* color theme from background */
+  --clr-blue-1: rgb(8, 81, 111);
+  --clr-blue-2: rgb(15, 32, 58);
+  --clr-blue-3: rgb(3, 36, 49);
+  --clr-lightblue-1: rgb(164, 228, 245);
+  --clr-lightblue-2: rgb(48, 133, 178);
+  --clr-red-1: rgb(167, 108, 112);
+  --clr-red-2: rgb(137, 70, 87);
+  --clr-red-2: rgb(166, 70, 72);
+  --clr-light-1: rgb(133, 163, 185);
+  --clr-light-2: rgb(171, 211, 209);
+  
   /* dark shades of primary color*/
   /* --clr-primary-1: hsl(43, 86%, 17%); */
   --clr-primary-1: hsl(184, 91%, 17%);
@@ -129,7 +141,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
+  background: var(--clr-lightblue-2);
   color: var(--clr-primary-9);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -144,8 +156,8 @@ p {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  color: var(--clr-lightblue-1);
+  background: var(--clr-red-2);
 }
 .center-btn {
   display: block;
@@ -171,10 +183,10 @@ p {
 }
 /* added during recording */
 .underline {
-  width: 5rem;
+  width: 15rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
+  background: var(--clr-lightblue-2);
   margin-left: auto;
   margin-right: auto;
 }
@@ -198,9 +210,10 @@ p {
   font-size: 1.75rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
+  color: var(--clr-lightblue-1);
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-red-2);
 }
 /*
 =============== 
@@ -217,7 +230,7 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-white);
+  background: var(--clr-blue-3);
 }
 .nav-center {
   width: 90vw;
@@ -233,13 +246,13 @@ Navbar
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--clr-lightblue-1);
   cursor: pointer;
   transition: var(--transition);
   margin: 1rem;
 }
 .toggle-btn:hover {
-  color: var(--clr-primary-2);
+  color: var(--clr-red-2);
 }
 .nav-links {
   display: none;
@@ -260,15 +273,15 @@ Navbar
   }
   .nav-links a {
     text-transform: capitalize;
-    color: var(--clr-grey-1);
+    color: var(--clr-lightblue-1);
     font-weight: bold;
     letter-spacing: var(--spacing);
     transition: var(--transition);
     padding: 0.5rem 0;
   }
   .nav-links a:hover {
-    color: var(--clr-primary-5);
-    box-shadow: 0px 2px var(--clr-primary-5);
+    color: var(--clr-red-2);
+    box-shadow: 0px 2px var(--clr-red-2);
   }
   .nav-center {
     display: flex;
@@ -297,7 +310,7 @@ Sidebar
 ===============
 */
 .sidebar {
-  background: var(--clr-grey-10);
+  background: var(--clr-blue-3);
   position: fixed;
   top: 0;
   left: 0;
@@ -321,7 +334,7 @@ Sidebar
   display: block;
   text-align: center;
   text-transform: capitalize;
-  color: var(--clr-grey-5);
+  color: var(--clr-lightblue-1);
   letter-spacing: var(--spacing);
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -329,8 +342,7 @@ Sidebar
   border-radius: var(--radius);
 }
 .sidebar-links li a:hover {
-  background: var(--clr-primary-9);
-  color: var(--clr-primary-5);
+  color: var(--clr-red-2);
 }
 .close-btn {
   position: absolute;
@@ -339,7 +351,7 @@ Sidebar
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: var(--clr-red-2);
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
@@ -420,7 +432,8 @@ Hero
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  background: var(--clr-primary-10);
+  /* background: var(--clr-primary-10); */
+  background-image: url("../assets/blue-red-bg.jpg");
   position: relative;
 }
 
@@ -428,20 +441,30 @@ Hero
   height: 100%;
   display: grid;
   align-items: center;
+  justify-content: center;
 }
 
 .hero .underline {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-.hero-info {
-  background: var(--clr-primary-10);
+.hero-content-container {
+  background: rgba(3, 36, 49, 0.9);
+  padding: 2rem; 
+  border-radius: 25px;
 }
+
 .hero-img {
   display: none;
 }
+.hero-info h1 {
+  color: var(--clr-light-2);
+}
 .hero-info h4 {
-  color: var(--clr-grey-5);
+  color: var(--clr-light-2);
+}
+.hero-info p {
+  color: var(--clr-light-1);
 }
 .hero-icons {
   justify-items: flex-start;
@@ -455,7 +478,7 @@ Hero
     content: "";
     position: absolute;
     top: 0;
-    left: 65%;
+    /* left: 65%; */
     right: 0;
     bottom: 0;
     background: var(--clr-white);
@@ -463,18 +486,49 @@ Hero
   .hero-center {
     grid-template-columns: repeat(12, 1fr);
   }
-
+  .hero-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    grid-column: 1 / span 12;
+    justify-content: space-around;
+    padding: 0 3rem;;
+    margin: 0;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(3, 36, 49, 0.9);
+  }
   .hero h4 {
     font-size: 0.85rem;
+    color: var(--clr-light-2);
+  }
+  .hero h1 {
+    color: var(--clr-light-2);
+  }
+  .hero p {
+    color: var(--clr-light-1);
   }
   .hero-info {
     grid-row: 1/1;
-    grid-column: 1 / span 8;
+    grid-column: 1 / span 6;
+    width: 600px;
+    margin-left: 2rem;
+  }
+
+  .image-container{
+    border-radius: 50%;
+    border: 10px solid var(--clr-lightblue-2);
+    z-index: 10;
+    grid-column: 8/12;
+    grid-row: 1/1;
+    overflow: hidden;
+    background: var(--clr-light-2);
+    margin-right: 2rem;
   }
   .hero-img {
     display: block;
-    grid-row: 1/1;
-    grid-column: 6/-1;
+    width: 22rem;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -549,7 +603,16 @@ Services
 Jobs
 ===============
 */
-
+.jobs {
+  background: var(--clr-lightblue-2);
+  color: var(--clr-blue-2);
+}
+.jobs p {
+  color: var(--clr-lightblue-1);
+}
+.jobs a {
+  background: var(--clr-blue-2);
+}
 .jobs-center {
   width: 80vw;
   margin: 0 auto;
@@ -572,18 +635,17 @@ Jobs
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
+  color: var(--clr-lightblue-1);
 }
 .job-btn:hover {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: var(--clr-white);
+  box-shadow: 0 2px var(--clr-white);
 }
 .active-btn {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: var(--clr-white);
+  box-shadow: 0 2px var(--clr-white);
 }
-.job-info {
-  /* min-height: 420px; */
-}
+
 .job-info h3 {
   font-weight: 400;
 }
@@ -607,13 +669,13 @@ Jobs
 }
 .job-desc p {
   margin-bottom: 0;
-  color: var(--clr-grey-3);
+  color: var(--clr-white);
 }
 .job-icon {
   color: var(--clr-primary-5);
 }
 @media screen and (min-width: 992px) {
-  .jobs-center {
+  /* .jobs-center {
     width: 90vw;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -631,6 +693,18 @@ Jobs
   }
   .job-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
+  } */
+  .job-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .job-info h3, h4, p {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .job-desc {
+    margin: 0 auto;
   }
 }
 
