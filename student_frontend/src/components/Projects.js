@@ -2,9 +2,11 @@ import React from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
+import { Sections } from "../elements/SectionElements"
+
 const Projects = ({ projects, title, showLink }) => {
   return (
-    <section className="section projects">
+    <Sections className="section projects">
       <Title title={title} />
       <div className="section-center projects-center">
         {projects.map((project, index) => {
@@ -16,7 +18,7 @@ const Projects = ({ projects, title, showLink }) => {
           Alla projekt
         </Link>
       )}
-    </section>
+    </Sections>
   )
 }
 

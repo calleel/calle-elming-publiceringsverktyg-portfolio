@@ -1,9 +1,11 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
+import { Sections } from "../elements/SectionElements"
+
 const Services = () => {
   return (
-    <section className="section bg-grey">
+    <Sections className="section bg-grey">
       <Title title="Tjänster" />
       <div className="section-center services-center">
         {services.map(service => {
@@ -20,7 +22,7 @@ const Services = () => {
           )
         })}
       </div>
-    </section>
+    </Sections>
   )
 }
 

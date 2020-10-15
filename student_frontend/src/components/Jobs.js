@@ -3,6 +3,7 @@ import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
+import { Sections } from "../elements/SectionElements"
 
 const query = graphql`
   {
@@ -34,7 +35,7 @@ const Jobs = () => {
   console.log(company, position, date, desc)
 
   return (
-    <section className="section jobs">
+    <Sections className="section jobs" style={{background: "var(--clr-lightblue-2)"}}>
       <Title title="erfarenhet" />
       <div className="jobs-center">
         {/* btn container */}
@@ -69,7 +70,7 @@ const Jobs = () => {
       <Link to="/about" className="btn center-btn">
         Mitt CV
       </Link>
-    </section>
+    </Sections>
   )
 }
 

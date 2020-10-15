@@ -2,9 +2,11 @@ import React from "react"
 import Title from "./Title"
 import Blog from "./Blog"
 import { Link } from "gatsby"
+import { Sections } from "../elements/SectionElements"
+
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
-    <section className="section blog-section">
+    <Sections className="section blog-section" style={{background: "var(--clr-grey-9)"}}>
       <Title title={title} />
       <div className="section-center blogs-center">
         {blogs.map(blog => {
@@ -17,7 +19,7 @@ export const Blogs = ({ blogs, title, showLink }) => {
           Alla artiklar
         </Link>
       )}
-    </section>
+    </Sections>
   )
 }
 export default Blogs

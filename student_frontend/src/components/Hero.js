@@ -2,6 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
+import { HeroWrapper } from "../elements/HeroElements"
 // ...GatsbyImageSharpFluid
 
 const query = graphql`
@@ -26,7 +27,7 @@ const Hero = () => {
   // console.log(data)
 
   return (
-    <header className="hero">
+    <HeroWrapper className="hero">
       <div className="section-center hero-center">
         <div class="hero-content-container">
           <article className="hero-info">
@@ -60,7 +61,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </header>
+    </HeroWrapper>
   )
 }
 export default Hero

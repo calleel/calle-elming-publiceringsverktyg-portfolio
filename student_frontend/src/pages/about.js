@@ -7,6 +7,8 @@ import { Link } from "gatsby"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 import downloadFile from "../../static/SohailCV2020.pdf"
+import { AboutPageWrapper, AboutCenter, AboutArticle, AboutStack, CVBtn } from "../elements/AboutElements"
+
 // ...GatsbyImageSharpFluid
 const About = ({
   data: {
@@ -18,32 +20,32 @@ const About = ({
   return (
     <Layout>
       <SEO title="CV" description="Sohails CV" />
-      <section className="about-page">
-        <div className="section-center about-center">
+      <AboutPageWrapper>
+        <AboutCenter>
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
-          <article className="about-text">
+          <AboutArticle>
             {/* <Title title={title} />
                 <p>{info}</p> */}
             <ReactMarkdown source={info} />
-            <div className="about-stack">
+            <AboutStack>
               {stack.map(item => {
                 return <span key={item.id}>{item.title}</span>
               })}
-            </div>
+            </AboutStack>
 
-            <div className="btn cv">
+            <CVBtn>
               <a href={downloadFile} download>
                 Ladda ner fullständig CV
               </a>
               {` `}
-            </div>
+            </CVBtn>
             <Link to="/contact" className="btn">
               kontakta mig
             </Link>
-          </article>
-        </div>
+          </AboutArticle>
+        </AboutCenter>
         <></>
-      </section>
+      </AboutPageWrapper>
     </Layout>
   )
 }
