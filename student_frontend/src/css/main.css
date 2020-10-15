@@ -551,13 +551,17 @@ Services
 ===============
 */
 .service {
-  background: var(--clr-white);
+  background: var(--clr-lightblue-2);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  color: var(--clr-white);
+}
+.service p {
+  color: var(--clr-lightblue-1);
 }
 .service-icon {
   font-size: 2rem;
@@ -574,14 +578,14 @@ Services
   transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  background: var(--clr-lightblue-1);
+  color: var(--clr-blue-1);
 }
 .service:hover p {
-  color: var(--clr-primary-9);
+  color: var(--clr-blue-1);
 }
 .service:hover .underline {
-  background: var(--clr-primary-9);
+  background: var(--clr-blue-2);
 }
 @media screen and (min-width: 676px) {
   .services-center {
@@ -645,7 +649,9 @@ Jobs
   color: var(--clr-white);
   box-shadow: 0 2px var(--clr-white);
 }
-
+.jobs .underline {
+  background-color: var(--clr-lightblue-1);
+}
 .job-info h3 {
   font-weight: 400;
 }
@@ -835,6 +841,15 @@ Projects
 Blog
 ===============
 */
+.blog-section {
+  background: var(--clr-lightblue-2);
+}
+.blog-section .center-btn{
+  background: var(--clr-blue-2);
+}
+.blog-section .underline {
+  background-color: var(--clr-lightblue-1);
+}
 .blog {
   display: block;
   margin-bottom: 2rem;
@@ -912,7 +927,7 @@ Footer
 */
 .footer {
   height: 9rem;
-  background: #222;
+  background: var(--clr-blue-3);
   text-align: center;
   display: grid;
   place-items: center;
@@ -931,6 +946,9 @@ Footer
 }
 .footer .social-link {
   color: var(--clr-white);
+}
+.footer ul {
+  justify-content: center;
 }
 .footer .social-link:hover {
   color: var(--clr-primary-5);
@@ -1009,6 +1027,9 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+.about-page .navbar {
+  background-color: var(--clr-blue-3);
+}
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;
@@ -1022,6 +1043,9 @@ About Page
   }
   .about-text {
     grid-column: 6 / -1;
+  }
+  .about-page .navbar {
+    background-color: var(--clr-blue-3);
   }
 }
 /*
