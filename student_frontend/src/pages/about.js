@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Title from "../components/Title"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import ReactMarkdown from "react-markdown"
@@ -16,7 +15,7 @@ const About = ({
   },
 }) => {
   //console.log(nodes)
-  const { info, stack, title, image } = nodes[0]
+  const { info, stack, image } = nodes[0]
   return (
     <Layout>
       <SEO title="CV" description="Sohails CV" />
