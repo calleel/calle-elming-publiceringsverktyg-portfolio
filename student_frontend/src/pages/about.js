@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
-import downloadFile from "../../static/SohailCV2020.pdf"
+import downloadFile from "../../static/CalleElmingCV.pdf"
 import { AboutPageWrapper, AboutCenter, AboutArticle, AboutStack, CVBtn } from "../elements/AboutElements"
 
 // ...GatsbyImageSharpFluid
@@ -18,7 +18,7 @@ const About = ({
   const { info, stack, image } = nodes[0]
   return (
     <Layout>
-      <SEO title="CV" description="Sohails CV" />
+      <SEO title="CV" description="Calles CV" />
       <AboutPageWrapper>
         <AboutCenter>
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
