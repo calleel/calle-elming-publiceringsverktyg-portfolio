@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { HeroWrapper } from "../elements/HeroElements"
 // ...GatsbyImageSharpFluid
 
+// GraphQl query for hero-image
 const query = graphql`
   {
     file(relativePath: { eq: "hero-img.png" }) {
@@ -24,8 +25,7 @@ const Hero = () => {
     },
   } = useStaticQuery(query)
 
-  // console.log(data)
-
+// Returns hero 
   return (
     <HeroWrapper className="hero">
       <div className="section-center hero-center">

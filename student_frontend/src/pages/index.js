@@ -7,6 +7,9 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+
+// index page
+
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },

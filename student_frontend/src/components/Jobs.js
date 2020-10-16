@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import { Sections } from "../elements/SectionElements"
 
+// GraphQl query for jobs
 const query = graphql`
   {
     allStrapiJobs(sort: { fields: strapiId, order: DESC }) {
@@ -32,7 +33,7 @@ const Jobs = () => {
   const [value, setValue] = React.useState(0)
   const { company, position, date, desc } = jobs[value]
   console.log(company, position, date, desc)
-
+// Returns jobs 
   return (
     <Sections className="section jobs" style={{background: "var(--clr-lightblue-2)"}}>
       <Title title="erfarenhet" />

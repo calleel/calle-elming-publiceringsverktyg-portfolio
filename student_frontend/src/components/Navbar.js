@@ -3,6 +3,7 @@ import SocialLinks from "../constants/socialLinks"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import { NavBar } from "../elements/NavElements"
+// Navbar component
 const Navbar = ({ toggleSidebar }) => {
   return (
     <NavBar>

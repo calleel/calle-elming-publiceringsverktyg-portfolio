@@ -3,6 +3,7 @@ import Title from "./Title"
 import services from "../constants/services"
 import { Sections } from "../elements/SectionElements"
 
+// Services component
 const Services = () => {
   return (
     <Sections className="section bg-grey">

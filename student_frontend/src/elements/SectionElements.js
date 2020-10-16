@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+// styled-components for all section elements
+
 export const Sections = styled.section`
 /*
 =============== 

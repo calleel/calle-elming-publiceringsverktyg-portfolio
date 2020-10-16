@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import SEO from "../components/SEO"
 
+
+// 404 page
 const Error = () => {
   return (
     <Layout>

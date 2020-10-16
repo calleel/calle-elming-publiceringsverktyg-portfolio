@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import { ContactPage, ContactForm, FormGroup, FormButton } from "../elements/ContactElements"
 
+// contact page
+
 const contact = () => {
   return (
     <Layout>

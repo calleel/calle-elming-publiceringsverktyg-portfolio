@@ -3,6 +3,7 @@ import Links from "../constants/links"
 import SocialLinks from "../constants/socialLinks"
 import { FaTimes } from "react-icons/fa"
 
+// Sidebar for mobile menu
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <aside className={`sidebar ${isOpen ? "show-sidebar" : ""} `}>

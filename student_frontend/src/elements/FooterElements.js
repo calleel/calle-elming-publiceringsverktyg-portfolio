@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+// styled-components for footer elements
+
 export const FooterWrapper = styled.footer`
 
   height: 9rem;

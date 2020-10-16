@@ -1,5 +1,6 @@
 import React from "react"
 
+// Default title
 const Title = ({ title }) => {
   return (
     <div className="section-title">

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+// styled-components for hero elements
+
 export const HeroWrapper = styled.header`
 
   margin-top: -5rem;

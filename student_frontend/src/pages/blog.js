@@ -6,6 +6,8 @@ import SEO from "../components/SEO"
 import { BlogPage } from "../elements/BlogElements"
 // ...GatsbyImageSharpFluid
 
+// blog page
+
 const Blog = ({
   data: {
     allStrapiBlogs: { nodes: blogs },

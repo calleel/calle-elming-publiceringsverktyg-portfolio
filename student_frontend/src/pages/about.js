@@ -14,7 +14,6 @@ const About = ({
     about: { nodes },
   },
 }) => {
-  //console.log(nodes)
   const { info, stack, image } = nodes[0]
   return (
     <Layout>

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({ description, title, github, stack, url, image, index }) => {
+  // Returns project
   return (
     <article className="project">
       {/* if image is not supplied, instead of breaking, dont show any image */}

@@ -6,6 +6,7 @@ import SEO from "../components/SEO"
 import { ProjectPage } from "../elements/ProjectElements"
 // ...GatsbyImageSharpFluid
 
+// page for project
 const ProjectsPage = ({
   data: {
     allStrapiProjects: { nodes: projects },

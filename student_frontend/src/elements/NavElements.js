@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+// styled-components for nav elements
+
 export const NavBar = styled.nav`
   position: absolute;
   top: 0;

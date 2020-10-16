@@ -4,6 +4,7 @@ import Blog from "./Blog"
 import { Link } from "gatsby"
 import { Sections } from "../elements/SectionElements"
 
+// Blogs component
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
     <Sections className="section blog-section" style={{background: "var(--clr-grey-9)"}}>

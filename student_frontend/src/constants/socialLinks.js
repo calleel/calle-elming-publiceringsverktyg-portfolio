@@ -5,6 +5,7 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa"
 
+// Social icons and url to each one
 const data = [
   {
     id: 1,

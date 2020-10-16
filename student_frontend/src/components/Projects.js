@@ -4,6 +4,7 @@ import Project from "./Project"
 import { Link } from "gatsby"
 import { Sections } from "../elements/SectionElements"
 
+// Returns projects
 const Projects = ({ projects, title, showLink }) => {
   return (
     <Sections className="section projects">
