@@ -2,9 +2,9 @@
     "provider": "cloudinary", 
     "providerOptions": 
     { 
-        "cloud_name": "dmlobpa59", 
-        "api_key": "558416641225126", 
-        "api_secret": "wQ0STFEjb0twFcwyYpD7_HyI-KA" 
+        "cloud_name": "", // You info in these fields
+        "api_key": "", 
+        "api_secret": "" 
     } 
     
 }
